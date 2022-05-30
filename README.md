@@ -119,10 +119,13 @@ Máy chủ web Apache
 
 Định cấu hình cron job cronjob
 
-☑️ SSH chạy lệnh `crontab -e`
-
-☑️ Nhấn `A` trên bàn phím và thêm  `* * * * * cd /www/wwwroot/your_site_domain && php cron.php 1 >> /dev/null 2>&1`
-
+☑️ SSH chạy lệnh 
+```crontab -e
+```
+☑️ Nhấn `A` trên bàn phím và thêm  
+```
+* * * * * cd /www/wwwroot/your_site_domain && php cron.php 1 >> /dev/null 2>&1
+```
 Sau khi thêm, nhấn `ESC` trên bàn phím và nhập `:x` rồi nhấn ENTER trên bàn phím
 
 NB: Thay đổi đường dẫn thư mục trang web của bạn `/www/wwwroot/tên miền trang web của bạn`
