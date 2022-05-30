@@ -161,7 +161,7 @@ nâng cấp
 ---------------------------------------------
 Sau khi đăng nhập vào máy chủ qua SSH, hãy truy cập vào đường dẫn của trang web như:
 ```
-cd / www / wwwroot / tên miền trang web của bạn
+cd /www/wwwroot/tên miền trang web của bạn
 ```
 lệnh nâng cấp
 ```
