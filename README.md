@@ -120,7 +120,8 @@ Máy chủ web Apache
 Định cấu hình cron job cronjob
 
 ☑️ SSH chạy lệnh 
-```crontab -e
+```
+crontab -e
 ```
 ☑️ Nhấn `A` trên bàn phím và thêm  
 ```
