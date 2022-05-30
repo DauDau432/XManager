@@ -1,8 +1,8 @@
 # Bảng điều khiển XManager
-## 1 Dùng thử miễn phí
+## 0 Dùng thử miễn phí
 Bản dùng thử miễn phí giới hạn số lượng người dùng là 20 người và tất cả các chức năng đều có sẵn.
 
-## 2 Cài đặt XManager
+## 1 Cài đặt XManager
 Triển khai thủ công bằng aaPanel
 
 aaPanel là phiên bản quốc tế của Pagoda (bt.cn)
@@ -155,3 +155,15 @@ Trò chuyện nhóm ID TG Chat ID TG robot bot gửi /ping để nhận ID
 TG Group ID: Thêm bot vào nhóm TG và sau đó /ping để lấy ID
 
 Chìa khóa TG BotFather nhận chìa khóa (token)
+
+## 2. Nâng cấp Xmanager
+nâng cấp
+---------------------------------------------
+Sau khi đăng nhập vào máy chủ qua SSH, hãy truy cập vào đường dẫn của trang web như:
+```
+cd / www / wwwroot / tên miền trang web của bạn
+```
+lệnh nâng cấp
+```
+php bin/console.php update
+```
