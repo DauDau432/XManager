@@ -111,4 +111,48 @@ service nginx restart
 ```
 systemctl restart nginx
 ```
+Máy chủ web Apache
+-------------------------------------------------
 
+☑️ Apache yêu cầu `.htaccess` `/www/wwwroot/yoursitedomain/.htaccess` và `/www/wwwroot/yoursitedomain/public/.htaccess`
+
+Đổi tên `.htaccess.bak` thành `.htaccess`
+
+Định cấu hình cron job cronjob
+
+☑️ SSH chạy lệnh `crontab -e`
+
+☑️ Nhấn `A` trên bàn phím và thêm  `* * * * * cd /www/wwwroot/your_site_domain && php cron.php 1 >> /dev/null 2>&1`
+
+Sau khi thêm, nhấn `ESC` trên bàn phím và nhập `:x` rồi nhấn ENTER trên bàn phím
+
+NB: Thay đổi đường dẫn thư mục trang web của bạn `/www/wwwroot/tên miền trang web của bạn`
+
+Tạo quản trị viên
+```
+cd /www/wwwroot/tên miền trang web của bạn
+```
+```
+php bin/console.php createAdmin
+```
+Tải xuống ứng dụng
+```
+cd /www/wwwroot/tên miền trang web của bạn
+```
+```
+php bin/console.php downloadapps  
+```
+Thiết lập Telegram Webhooks
+```
+cd /www/wwwroot/tên miền trang web của bạn
+```
+```
+php bin/console.php setTelegram
+```
+Phần phụ trợ quản lý, cài đặt hệ thống -> cài đặt thông báo -> phương thức thông báo -> Thông tin điện tín
+
+Trò chuyện nhóm ID TG Chat ID TG robot bot gửi /ping để nhận ID
+
+TG Group ID: Thêm bot vào nhóm TG và sau đó /ping để lấy ID
+
+Chìa khóa TG BotFather nhận chìa khóa (token)
