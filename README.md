@@ -7,7 +7,7 @@ Triển khai thủ công bằng aaPanel
 
 aaPanel là phiên bản quốc tế của Pagoda (bt.cn)
 
-1. Định cấu hình aaPanel
+Định cấu hình aaPanel
  
 Bạn cần chọn hệ thống của mình trong aaPanel để lấy phương pháp cài đặt. Ở đây, CentOS 7+ được sử dụng làm môi trường hệ thống để cài đặt
 
@@ -97,7 +97,6 @@ Sử dụng phpmyadmin để nhập cơ sở dữ liệu sql `/xmanager.sql` kh�
 ☑️ Sau khi thêm, hãy chỉnh sửa trang web đã thêm> Viết lại URL và điền thông tin giả tĩnh.
 
 Máy chủ web Nginx
-
 -----------------------------------------------
 ```
 location / {
